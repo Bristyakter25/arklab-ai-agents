@@ -3,6 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
 
 
+
+
+
 export const metadata: Metadata = {
   title: "ArkLab AI Agent Directory",
   description: "Explore powerful AI agents for marketing, customer service, and more.",
@@ -19,6 +22,7 @@ export default function Home() {
       <Link href="/ai-agents">
         <Button size="lg">View AI Agents</Button>
       </Link>
+    
     </main>
   );
 }
