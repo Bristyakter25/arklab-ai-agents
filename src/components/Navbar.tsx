@@ -23,8 +23,8 @@ export default function Navbar() {
         <div className="hidden md:flex gap-6 text-gray-700 font-medium">
           <button className="hover:text-blue-500"><Link href="/">Home</Link></button>
           <button className="hover:text-blue-500"><Link href="/ai-agents">AI Agents</Link></button>
-          <button className="hover:text-blue-500">Pricing</button>
-          <button className="hover:text-blue-500">Contact</button>
+         
+          
         </div>
 
         {/* Auth Buttons */}
