@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className="text-xl font-bold text-blue-600">ArkLab AI</div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex gap-6 text-gray-700 font-medium">
+        <div className="hidden md:flex items-center justify-center gap-6 text-gray-700 font-medium">
           <button className="hover:text-blue-500"><Link href="/">Home</Link></button>
           <button className="hover:text-blue-500"><Link href="/ai-agents">AI Agents</Link></button>
          
