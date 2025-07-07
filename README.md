@@ -62,6 +62,28 @@ A responsive, server-side rendered AI Agent Catalog built with **Next.js**, **Ty
 - **Login with Google** via `Firebase` 
 - **Logout functionality**
 
+## Tools Used
+- **Firebase Authentication (Google Sign-In)**
+
+- **Firebase SDK for client-side auth handling**
+
+## Mock Google credentials set via .env.local:
+NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key_here
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+
+
+## Challenges Faced
+- Handling Firebase initialization safely inside useEffect with SSR (Next.js App Router).
+
+- Ensuring Redux updates on onAuthStateChanged after refresh or hot reload.
+
+- Firebase’s auth/unauthorized-domain issue required adding the local domain to Firebase Console > Authentication > Sign-in Method > Authorized domains.
+
+
 ---
 
 ## Installation & Setup
@@ -76,3 +98,11 @@ npm install
 
 # Run the dev server
 npm run dev
+
+# Firebase Setup
+# 1. Go to https://console.firebase.google.com/
+# 2. Create a project (or use existing)
+# 3. Enable Google Sign-In under Authentication > Sign-in method
+# 4. Add your localhost or domain to "Authorized domains"
+# 5. Get your config values (apiKey, authDomain, etc.)
+# 6. Store them in a `.env.local` file:
