@@ -68,7 +68,13 @@ A responsive, server-side rendered AI Agent Catalog built with **Next.js**, **Ty
 - **Firebase SDK for client-side auth handling**
 
 ## Mock Google credentials set via .env.local:
-<pre lang="env"><code>```env NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key_here NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id ```</code></pre>
+```env
+NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key_here
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
 
 
 ## Challenges Faced
